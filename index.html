@@ -4,21 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+
     <title>Tela_de_login</title>
+
 </head>
 
 <body>
     <Main class="container">
-        <h1>Login</h1>
         <form>
-            <div class="imput-box">
+            <h1>Login</h1>
+            <div class="input-box">
                 <input placeholder="Usuário" type="email">
+                <i class='bx bxs-user'></i>
             </div>
-            <div class="imput-box">
+            <div class="input-box">
                 <input placeholder="Senha" type="password">
+                <i class='bx bxs-lock-alt'></i>
             </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Lembrar minha senha
+                </label>    
+            <a href="#">Esqueci minha senha</a>
+            </div>
+            <button type="submit">Login</button>
+            <div>
+                <p> Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+
         </form>
     </Main>
+    <script src="script.js"></script>
 </body>
 
 </html>
